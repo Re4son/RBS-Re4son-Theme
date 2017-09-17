@@ -1,0 +1,114 @@
+# ubuntu-mate GRUB2 theme
+#
+# Copyright (C) 2017 re4son <re4son@whitedome.com.au>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+# Edited TuxkillerV2 theme found at:
+# http://gnome-look.org/content/show.php/Grub2+Theme+Tuxkiller+V2?content=169520
+# 10-1-15 XPLiCiT
+
+# general settings
+title-text: ""
+title-color: "green"
+message-font: "DroidLogo Regular 12"
+message-color: "white"
+message-bg-color: "black"
+desktop-image: "background.png"
+desktop-color: "#5cff33"
+terminal-font: "DejaVu Sans Regular 14"
+terminal-box: "terminal_box_*.png"
+
+# Logo Xubuntu XFCE
+##+ image { 
+##    left = 9%
+##    top = 84%
+##    width = 216
+##    height = 45
+##    file = "xubuntu-logo-45.png"
+##}
+
+# Title menu
++ label {
+##	top = 40%
+	top = 60%
+	left = 7%
+	width = 30%
+	height = 40
+	text = "WOPR-Stealth"
+	align = "center"
+	font = "DroidLogo Bold 44"
+	color = "#5cff33"
+}
+# boot menu
++ boot_menu {
+    left = 5%
+    width = 35%
+    top = 65%
+    height = 30%	
+    item_font = "DroidLogo Regular 24"
+    item_color = "white"
+    selected_item_font = "DroidLogo Regular 24"
+    selected_item_color = "#5cff33"
+##    selected_item_color = "#5454fe"
+    icon_width = 16
+    icon_height = 16
+    item_height = 75
+    item_padding = 40
+    item_icon_space = 0
+    item_spacing = 1
+    menu_pixmap_style = "boot_menu2_*.png"
+    selected_item_pixmap_style = "highlight_*.png"
+}
+
+# Show logo and circular progress
++ circular_progress
+{
+   id = "__timeout__"
+   left = 100
+   top = 100
+   width = 262
+   height = 261
+   num_ticks = 50
+   ticks_disappear = false
+   start_angle = -67
+   end_angle = -67
+   center_bitmap = "razer.png"
+   tick_bitmap = "tick.png"
+}
+
+# help bar at the bottom
++ image { 
+    left = 11%+5
+    top = 100%-92
+    width = 20 
+    height = 20 
+    file = "fleches_haut_bas.png"
+}
++ hbox {
+    top = 100%-100
+    left = 12%
+
+#    + label { text = "↑↓" font = "DroidLogo Regular 20" color = "#fefefe" }
+    + label { text = " :select       " font = "DroidLogo Regular 22" color = "#5cff33" }
+    + label { text = "enter " font = "DroidLogo Regular 22" color = "#5454fe" }
+    + label { text = ":boot       " font = "DroidLogo Regular 22" color = "#5cff33" }
+    + label { text = "e " font = "DroidLogo Regular 22" color = "#5454fe" }
+    + label { text = ":edit       " font = "DroidLogo Regular 22" color = "#5cff33" }
+    + label { text = "c " font = "DroidLogo Regular 22" color = "#5454fe" }
+    + label { text = ":command-line       " font = "DroidLogo Regular 22" color = "#5cff33" }
+    + label { text = "esc " font = "DroidLogo Regular 22" color = "#5454fe" }
+    + label { text = ":retour menu" font = "DroidLogo Regular 22" color = "#5cff33" }
+}

@@ -1,0 +1,7 @@
+[Plymouth Theme]
+Name=Razer
+Description=Wallpaper only
+ModuleName=script
+[script]
+ImageDir=/usr/share/plymouth/themes/razer
+ScriptFile=/usr/share/plymouth/themes/razer/razer.script
